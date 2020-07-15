@@ -1,13 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(29, 53, 87);
+  color: white;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+.cell{
+  width: 50px;
+  height: 50px;
+  margin: 3px 1px;
+  outline: none;
+  /* color: black; */
+  background-color: white;
+  border: none;
+  /* border: 1px solid black; */
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.541);
+  border-radius: 2px;
+  padding: 0px;
+  font-size: 25px;
+  /* text-transform: capitalize; */
+  transition: all ease 0.1s;
+  vertical-align: middle;
 }
+.cell:hover{
+  /* background-color: rgba(0, 0, 0, 0.521); */
+  background-color: rgba(255, 255, 255, 0.733);
+  transition: all ease 0.1s;
+}
+.board{
+  margin-top: 50px;
+  text-align: center;
+}
+*{
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  
+}
+.result{
+  display: none;
+  position: fixed;
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+  /* background-color: rgba(168, 218, 220, 0.4); */
+  background-color: rgba(168, 218, 220, 0.9);
+  z-index: 2;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.resultbox{
+  position: absolute;
+  background-color: rgb(29, 53, 87);
+
+  border-radius: 4px;
+  box-shadow: 0 0px 25px rgb(255, 255, 255);
+  /* width:0; */
+  min-width:150px;
+  /* height: 100px; */
+  padding: 50px;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  box-shadow: 0 0 200px rgba(255, 255, 255, 0.829);
+
+  /* transition: width ease 2s ; */
+}
+.resultbox *{
+  margin-top: 10px;
+
+}
+.resultbox p{
+  color: white;
+  font-size: 30px;
+  font-weight: bolder;
+  font-style: italic;
+}
+.draw{
+ display: block;
+}
+.won{
+  display: block;
+
+}
+.hidden{
+  display: none;
+}
+.resetbutton{
+  background-color: rgb(230, 57, 70);
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
+  outline: none;
+  border: none;
+  width: 60px;
+  line-height: 3;
+  border-radius: 2px;
+  transition: all ease 0.1s;
+
+}
+.resetbutton:hover{
+  /* background-color: rgb(255, 255, 255); */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.664);
+  transition: all ease 0.1s;
+}
+
+
+
+/* colors{
+  230, 57, 70 red
+  241, 250, 238 light
+  168, 218, 220 light blue
+  69, 123, 157 blue
+  29, 53, 87 dark blue
+} */
